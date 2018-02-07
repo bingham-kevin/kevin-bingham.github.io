@@ -5,25 +5,36 @@
     display:none;
   }  /* hamburger button does not need to be shown */
 
+main section{
+  width: 40%;
+}
+  main figure img {
+    width: 40%;
+    float: left;
+    overflow: hidden;
+  }
   section.forecast {
-    display: flex;
+    text-align: center;
+    display: block;
     justify-content: center;
-    width: auto;
+    width: 100%;
+    font-size: 1.5em;
     background-color: #395c6b;
     color: #fff;
   }  /* show the 10-day forecast with the medium view and up */
-
-  section.forecast h3 {
-   display: flex;
+  table{
+    font-size: 1.5rem;
+    display: inline;
+    padding: 10px 10px 10px 10px;
+  }
+  th, td {
+    padding: 10px 10px 10px 10px;
   }
 
   article{
     overflow: hidden;
   }
 
-  article h3{
-    text-align: center;
-  }
 
   article p.town-article{
     padding: 0 10em 0 10em;

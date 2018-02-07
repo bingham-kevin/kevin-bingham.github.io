@@ -1,7 +1,7 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;
-  border: 1px solid red}  /* This wildcard applies to all elements ensuring a box layout model */
+  }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
@@ -65,8 +65,7 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-  padding: .5em .2em;
-  background-color: #ababab;
+  color: #000;
   line-height: 1em;
 }
 
@@ -77,9 +76,11 @@ main {
   background-color: white;
 }
 main h2 {
+ font-size: 2em;
  text-align: center;
 }
 main h3 {
+ font-size: 2em;
 }
 main figure {
   margin: 0 0 .2rem 2%;
