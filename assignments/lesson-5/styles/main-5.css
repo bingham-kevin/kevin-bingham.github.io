@@ -1,78 +1,110 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;
+  border: 1px solid red}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
   /* Declare the base font-family - from google font api or other */
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer {
+  font-family: arial;
+  background-color: #395c6b;
+  color: #fff;/* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {
-  color: #4d4a4a;
+  overflow: hidden;
+  color: #000;
+  background-color: #fff;
 }
-header h1 {}
-header img {
 
+header h1 {
+  text-align: justify;
+}
+
+header img {
+  float: left;
+  flex: auto;
+  margin: 0 0 1em 1em;
 }
 header .subheading {
-  color: #4D4A4A;
+  text-align: justify;
+  text-transform: uppercase;
 }
 
 nav {
-  //clear: left;
+  margin: auto;
+  background-color: #395c6b;
   display: flex;
   justify-content: center;
-  background-color: #395c6b;
 }
+
 nav button {}
-nav ul {}
+nav ul {
+}
 nav ul li {
    display: inline;
    margin: 0;
 }
+
 nav ul li a {
-  padding: .5em .2em;
-  line-height: 1em;
+  font-size: large;
+  text-transform: uppercase;
+  padding: .5em;
+  line-height: 2em;
   text-decoration: none;
   color: white;
-  }
+}
+
 nav ul li.active a {
-    background-color: #ababab;
-    line-height: 1em;
-    color: #000;
-  }
+  line-height: .5em;
+  color: #d4cb92;
+}
+
 nav ul li a:hover {
   padding: .5em .2em;
   background-color: #ababab;
   line-height: 1em;
 }
 
-main {}
-main h2 {}
+main {
+  color: black;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+main h2 {
+ text-align: center;
+}
+main h3 {
+}
 main figure {
   margin: 0 0 .2rem 2%;
   width:96%;
 }
+
 main figure img {
   width: 100%;
 }
 
-section {}
+section {
+}
 
-section.forecast{
+  section.forecast{
           display: none;
-      }
+        }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%; /* fill the page in the small/phone view */
   margin: auto;
 }
 
-footer {}
+footer {
+  text-align: center;
+}
 footer aside {}
 footer p {
   } /* This structure refers to p elements that are direct children of the footer element */

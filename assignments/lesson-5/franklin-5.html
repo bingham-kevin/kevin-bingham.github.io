@@ -8,7 +8,7 @@
   <meta name="author" content="Your Name Here">
   <meta name="description" content="page description placeholder">
   <!-- external style references in the proper cascading order -->
-  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <!-- link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet" -->  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -17,7 +17,7 @@
 <body>
 
   <header>
-    <img src="images/logo.jpg" alt="tricity logo" width="150rem" height="150rem">
+    <img src="images/logo.svg" alt="tricity logo" width="150rem" height="150rem">
     <h1>Tri-City Forecaster</h1>
     <div class="subheading">Delivering real local forecasts that matter to you</div>
   </header>
@@ -43,8 +43,8 @@
     <section>
       <h3>Weather Summary</h3>
       <div class="highlow">
-        <p>High:</p>
-        <p>Low:</p>
+        <p>High: 73&deg; F</p>
+        <p>Low: 42&deg; F</p>
       </div>
       <div class="current">
         Sunny
@@ -53,14 +53,14 @@
         </picture>
       </div>
       <div class="conditions">
-        <p>Precipitation:</p>
-        <p>Wind Speed:</p>
+        <p>Precipitation: 0.0 inches</p>
+        <p>Wind Speed: 4 mph E</p>
       </div>
     </section>
 
     <section class="forecast">
       <h3>10 Day Forecast</h3>
-      <table>
+      <table class="days">
 	    <thead>
           <tr>
             <th>Day 1</th>
@@ -95,8 +95,8 @@
     <article>
       <h3>Franklin Breaks Record</h3>
       <p class="town-article">
-        <img src="images/franklin.jpeg" alt="franklin town" width="600px" height="400px">
         short article content placeholder
+        <img src="images/franklin.jpeg" alt="franklin town" width="600px" height="400px">
       </p>
 		</article>
 
@@ -109,8 +109,8 @@
     <p class="footer-bar">&copy; 2018 All Rights Reserved | Tri-City Forecaster | <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
 
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
+  <!--script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script -->
 
 </body>
 </html>
