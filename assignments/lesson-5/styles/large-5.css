@@ -5,20 +5,22 @@
     height: 200px;
   }
   main section{
+    vertical-align: middle;
     display: inline;
     padding-bottom: 3em;
     overflow: hidden;
   }
   .current{
     float: left;
-  }
-  .current picture{
-    float: left;
+    vertical-align: middle;
+    margin-left: 10em;
   }
   .highlow p{
+    display: block;
     float: left;
   }
   .conditions{
     float: left;
   }
+
 }

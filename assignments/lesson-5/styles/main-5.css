@@ -1,7 +1,6 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;
-  border: 1px solid red;
   }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -95,18 +94,16 @@ main figure img {
   width: 100%;
 }
 
-main section {
-  display: inline-flex;
+section {
   font-weight: 300;
   text-align: center;
-  vertical-align: middle;
 }
-  .current picture{
+  .current img{
     padding: 20px;
+    vertical-align: middle;
   }
   .highlow p{
     padding: 20px;
-    margin: 10px 10px 10px 10px;
     display: inline;
   }
   .conditions{

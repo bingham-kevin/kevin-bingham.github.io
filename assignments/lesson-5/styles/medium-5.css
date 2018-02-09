@@ -38,13 +38,15 @@ main section{
   table{
     font-size: 1rem;
     display: inline;
-    padding: auto;
+    padding: 10px;
   }
   th, td {
     padding: 10px 10px 10px 10px;
   }
 
   article {
+    margin-top: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
   }
 
