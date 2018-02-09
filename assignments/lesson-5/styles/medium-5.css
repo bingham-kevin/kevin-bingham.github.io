@@ -1,15 +1,28 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-
+  header{
+    margin: auto;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .9em;
+    width: 1000px;
+  }
   nav button {
     display:none;
   }  /* hamburger button does not need to be shown */
 
+  nav ul li {
+     display: inline-flex;
+  }
+
 main section{
-  width: 40%;
+  display: block;
+  padding-bottom: 3em;
 }
   main figure img {
-    width: 40%;
+    width: 60%;
+    height: 60%;
     float: left;
     overflow: hidden;
   }
@@ -18,33 +31,35 @@ main section{
     display: block;
     justify-content: center;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     background-color: #395c6b;
     color: #fff;
   }  /* show the 10-day forecast with the medium view and up */
   table{
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: inline;
-    padding: 10px 10px 10px 10px;
+    padding: auto;
   }
   th, td {
     padding: 10px 10px 10px 10px;
   }
 
-  article{
+  article {
     overflow: hidden;
   }
 
+  article h3{
+    text-align: center;
+  }
 
   article p.town-article{
-    padding: 0 10em 0 10em;
     float: left;
   }
 
   article p.town-article img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
     float: right;
+    height: 40%;
   }  /* responsive images */
 
 }

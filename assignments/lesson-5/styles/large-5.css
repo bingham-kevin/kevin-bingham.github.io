@@ -1,7 +1,24 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-
-  article p.town-article img {
+  main figure img {
+    width: 100%;
+    height: 200px;
   }
-
+  main section{
+    display: inline;
+    padding-bottom: 3em;
+    overflow: hidden;
+  }
+  .current{
+    float: left;
+  }
+  .current picture{
+    float: left;
+  }
+  .highlow p{
+    float: left;
+  }
+  .conditions{
+    float: left;
+  }
 }
