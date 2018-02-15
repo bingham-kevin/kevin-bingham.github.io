@@ -1,0 +1,60 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  header{
+    margin: auto;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .9em;
+    width: 1000px;
+  }
+  nav button {
+  }  /* hamburger button does not need to be shown */
+  
+main section{
+  display: block;
+  padding-bottom: 3em;
+}
+  main figure img {
+    width: 50%;
+    height: 50%;
+    float: left;
+  }
+  section.forecast {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #395c6b;
+    color: #fff;
+  }  /* show the 10-day forecast with the medium view and up */
+  table{
+    font-size: 1rem;
+    display: inline;
+    padding: 10px;
+  }
+  th, td {
+    padding: 10px 10px 10px 10px;
+  }
+
+  article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  article h3{
+    text-align: center;
+  }
+
+  article p.town-article{
+    float: left;
+  }
+
+  article p.town-article img {
+    width: 40%;
+    float: right;
+    height: 40%;
+  }  /* responsive images */
+
+}
