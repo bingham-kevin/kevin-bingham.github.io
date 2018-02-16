@@ -16,21 +16,26 @@
   main figure.image img{
     width: 100%;
   }
-  main section{
+section{
     vertical-align: middle;
     display: inline;
-    padding-bottom: 3em;
+    padding: 3em;
+    margin: auto;
   }
   .current{
     float: left;
     vertical-align: middle;
-    margin-left: 10em;
   }
   .highlow p{
+    margin: 1em 1em;
     display: block;
     float: left;
   }
   .conditions{
+    display: flex;
+  }
+  .conditions p{
+    margin: 1em 1em;
     float: left;
   }
 

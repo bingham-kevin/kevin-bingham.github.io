@@ -6,11 +6,17 @@
     text-align: left;
     text-transform: uppercase;
     font-size: .9em;
-    width: 1000px;
   }
+
+  header img {
+    padding: .5em .5em;
+    height: 10%;
+    width: 10%;
+  }
+
   nav button {
   }  /* hamburger button does not need to be shown */
-  
+
 main section{
   display: block;
   padding-bottom: 3em;
@@ -20,6 +26,7 @@ main section{
     height: 50%;
     float: left;
   }
+
   section.forecast {
     text-align: center;
     display: block;
