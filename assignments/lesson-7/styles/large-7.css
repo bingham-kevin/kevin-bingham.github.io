@@ -14,7 +14,23 @@
   main figure.image img{
     width: 100%;
   }
+main .center {
+  display: flex;
+  flex-direction: column;
+}
+main .image{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+}
+main .allconditions {
+  display: flex;
+  flex-direction: row;
+}
+
 section{
+    grid-column: 1;
+    grid-row: 2;
     vertical-align: middle;
     display: flex;
     flex-direction: column;
@@ -29,6 +45,7 @@ section{
   }
   .conditions{
     display: flex;
+    flex-direction: column;
   }
   .conditions p{
     margin: 1em 1em;

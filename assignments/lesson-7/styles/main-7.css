@@ -119,7 +119,7 @@ section {
 }
 .allconditions{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 .current{
@@ -143,8 +143,7 @@ section {
   }
 
   section.forecast{
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 article{
   padding: 1em;
