@@ -1,0 +1,105 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  header{
+    margin: auto;
+    display: flex;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .9em;
+  }
+
+  header img {
+    padding: 1em 1em;
+    height: 10%;
+    width: 10%;
+  }
+
+  nav button {
+  }  /* hamburger button does not need to be shown */
+
+  main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main figure img {
+    width: 50%;
+    height: 50%;
+  }
+
+  section.forecast {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #395c6b;
+    color: #fff;
+  }  /* show the 10-day forecast with the medium view and up */
+  table{
+    font-size: 1rem;
+    padding: 10px;
+  }
+  th, td {
+    padding: 10px 10px 10px 10px;
+  }
+
+  article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  article h3{
+    text-align: center;
+  }
+
+  article p.town-article{
+    display: flex;
+    flex-direction: row;
+  }
+
+  article p.town-article img {
+    width: 40%;
+    height: 40%;
+    order: 2;
+  }  /* responsive images */
+  main img{
+    width: 100%;
+    height: auto;
+  }
+  .images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: baseline;
+  }
+  .picture1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .picture2{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .picture3{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .picture4{
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .picture5{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .picture6{
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .images p{
+    display: flex;
+    flex-direction: column;
+  }
+}
