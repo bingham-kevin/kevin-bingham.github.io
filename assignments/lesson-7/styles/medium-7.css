@@ -22,9 +22,22 @@
     flex-direction: column;
     align-items: center;
   }
-  main figure img {
+  main .center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main .image{
     width: 50%;
+    height: auto;
+  }
+  main .allconditions {
+    display: flex;
+    flex-direction: column;
+  }
+  section .current{
     height: 50%;
+    width: auto;
   }
 
   section.forecast {
