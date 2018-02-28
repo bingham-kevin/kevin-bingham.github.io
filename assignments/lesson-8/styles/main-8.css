@@ -1,0 +1,222 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;
+  }  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer {
+  font-family: "Open Sans";
+  background-color: #395c6b;
+  color: #fff;
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+  justify-content: center;
+  width: 90%;
+  color: #000;
+  background-color: #fff;
+  font-weight: 700;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.header h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.header img {
+  padding: .5em .5em;
+  height: 25%;
+  width: 25%;
+}
+.headertext {
+  flex-direction: column;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+nav {
+  margin: auto;
+  background-color: #395c6b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav button {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ z-index: 20;
+}
+nav ul.hide {
+  display: none;
+}
+nav ul li {
+  margin: 0px 10px 0px 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+nav ul li a {
+  font-size: large;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li.active a {
+  color: #d4cb92;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+main {
+  color: black;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+main h2 {
+ font-size: 2em;
+ text-align: center;
+}
+main h3 {
+ font-size: 2em;
+}
+main figure {
+  margin: 0 0 .2rem 2%;
+  width:96%;
+}
+
+main figure img {
+  width: 100%;
+}
+
+section {
+  font-weight: 300;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.allconditions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.current{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: .5em;
+}
+  .highlow {
+    display: flex;
+    align-items: center;
+    flex: auto;
+    flex-direction: row;
+  }
+  .highlow p{
+    padding: .5em;
+  }
+  .conditions{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.forecast{
+    display: none;
+  }
+article{
+  padding: 1em;
+  border-width: 1px;
+  border-style: solid;
+  margin: auto 5% 5% 5%;
+}
+article h3{
+  text-align: center;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%;
+  height: 62%;/* fill the page in the small/phone view */
+}
+
+footer {
+  font-size: .7em;
+  text-align: center;
+}
+footer aside ul li{
+  list-style-type: none;
+  text-align: center;
+}
+footer p {
+  } /* This structure refers to p elements that are direct children of the footer element */
+
+/* Gallery */
+
+  .images{
+    display: grid;
+  }
+  .images p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* Storm Center */
+form#storm {
+  margin: 2em 5%;
+}
+
+fieldset {
+  background-color: #d4cb92;
+  margin: 1em 0;
+  box-shadow: 5px 5px 8px #A6A1A1;
+}
+
+legend {
+ margin-left: 5%;
+ padding: .8em;
+ background-color: #395c6b;
+ color: #fff;
+ border: #A6A1A1 solid 1px;
+ box-shadow: 1px 1px 2px #A6A1A1;
+}
+
+label {
+  display: block;
+  padding-top: .8em;
+  padding-bottom: .4em;
+}
+select {
+  width: 30%;
+}
+
+input.submitBtn {
+  -webkit-appearance: none; /* remove the apple mobile default styling */
+  border-radius: 5px;
+  background-color: #395c6b;
+  color: #fff;
+  width: 50%;
+  box-shadow: 3px 3px 4px #A6A1A1;
+}
+
+/* Other Class Selectors */
