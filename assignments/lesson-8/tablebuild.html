@@ -11,9 +11,13 @@
 <body>
   <main>
     <table>
-      ACME Wildwest
       <thead>
-        <tr>
+        <tr id="row1">
+          <th colspan="3">
+            ACME Wildwest
+          </th>
+        </tr>
+        <tr id="row2">
           <th>Period</th>
           <th>Sales</th>
           <th>Sales Goal</th>
@@ -35,14 +39,14 @@
         <td>$4,870</td>
         <td>$5,000</td>
       </tr>
-      <tr>
+      <tr id="beatgoal">
         <td>November</td>
         <td>$8,610</td>
         <td>$7,500</td>
       </tr>
-      <tr>
+      <tr id="italic">
         <td>Black Friday</td>
-        <td>$3,200</td>
+        <td colspan="2">$3,200</td>
       </tr>
       <tr>
         <td>December</td>
@@ -51,7 +55,9 @@
       </tr>
       </tbody>
       <tfoot>
-        Complied 02.26.2018 by kbingham
+        <tr>
+          <td colspan="3">Complied 02.26.2018 by kbingham</td>
+        </tr>
       </tfoot>
     </table>
 
