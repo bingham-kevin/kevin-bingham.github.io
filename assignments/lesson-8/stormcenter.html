@@ -38,17 +38,17 @@
   </nav>
 
   <main>
-    <form action="thanks.html" method="post" enctype="multipart/form-data" name="report" id="storm">
+    <form action="thanks.html" method="post" enctype="multipart/form-data" name="report" id="stormy">
       <fieldset>
         <legend><span>Personal Information</span></legend>
         <label><span>Full Name:</span></label>
-          <input type="text" name="fullname" pattern="[a-zA-Z -._]{5,99}" size="30" required>
+          <input type="text" name="fullname" size="30" required>
         <label><span>Email:</span></label>
           <input type="email" placeholder="name@tricityforcaster.com" size="30" required>
         <label><span>Phone Number:</span></label>
-          <input type="tel" value="" placeholder="1235551234" pattern="[0-9]{1,20}" required>
+          <input type="tel" value="" placeholder="123-555-1234" required>
         <label><span>Zip Code:</span></label>
-          <input type="number" required pattern="[0-9]{5}">
+          <input type="number" required>
       </fieldset>
       <fieldset>
         <legend><span>Storm Details</span></legend>
@@ -74,9 +74,12 @@
             <option value="springfield">Springfield</option>
           </select>
         <label><span>User In-Danger Level:</span></label>
-            <input type="radio" name="danger" value="yes">Yes</option>
-            <input type="radio" name="danger" value="maybe">Maybe</option>
-            <input type="radio" name="danger" value="no">No</option>
+            <input type="radio" name="danger" value="yes">Yes
+            <input type="radio" name="danger" value="maybe">Maybe
+            <input type="radio" name="danger" value="no">No
+      </fieldset>
+      <fieldset>
+        <legend><span>Information</span></legend>
         <label><span>Additional Information or Comments:</span></label>
             <textarea name="message" rows="10" cols="35"></textarea>
       </fieldset>
