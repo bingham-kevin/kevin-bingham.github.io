@@ -209,7 +209,13 @@ label {
 select {
 
 }
-
+input, textarea{
+  width: 60%;
+  max-width: 500px;
+}
+input#radio{
+  width: 10%;
+}
 input.submitBtn {
   -webkit-appearance: none; /* remove the apple mobile default styling */
   border-radius: 5px;
@@ -220,3 +226,7 @@ input.submitBtn {
 }
 
 /* Other Class Selectors */
+main h1#thanks {
+  font-weight: 600;
+  text-align: center;
+}
