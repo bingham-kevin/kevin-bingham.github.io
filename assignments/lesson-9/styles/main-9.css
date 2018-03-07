@@ -95,12 +95,9 @@ main {
   background-color: white;
 }
 main h2 {
- font-size: 2em;
  text-align: center;
 }
-main h3 {
- font-size: 2em;
-}
+
 main figure {
   margin: 0 0 .2rem 2%;
   width:96%;
@@ -146,7 +143,8 @@ section {
     display: none;
   }
 article{
-  padding: 1em;
+  width: 70%;
+  padding: 1em 1em;
   border-width: 1px;
   border-style: solid;
   margin: auto 5% 5% 5%;
@@ -157,6 +155,9 @@ article h3{
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%;
   height: 62%;/* fill the page in the small/phone view */
+}
+article ul li{
+  list-style-type: none;
 }
 
 footer {

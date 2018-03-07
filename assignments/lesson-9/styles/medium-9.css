@@ -56,7 +56,13 @@
   th, td {
     padding: 10px 10px 10px 10px;
   }
-
+section {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: baseline;
+}
   article {
     margin-top: 10px;
     margin-bottom: 10px;
