@@ -8,7 +8,7 @@
     font-size: .9em;
   }
 
-  header img {
+  header.header img {
     padding: 1em 1em;
     height: 10%;
     width: 10%;
@@ -20,7 +20,11 @@
   main section{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
+  }
+  h2#cityheading{
+    font-weight: 700;
+    font-size: 2em;
   }
   main .center {
     display: flex;
@@ -40,15 +44,6 @@
     width: auto;
   }
 
-  section.forecast {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.2em;
-    background-color: #395c6b;
-    color: #fff;
-  }  /* show the 10-day forecast with the medium view and up */
   table{
     font-size: 1rem;
     padding: 10px;
@@ -56,16 +51,32 @@
   th, td {
     padding: 10px 10px 10px 10px;
   }
-section {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  align-items: baseline;
-}
-  article {
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+  main section {
+    padding: 2em;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  h3#cityname {
+    font-size: 2em;
+    align-items: center;
+  }
+  section.forecast{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #395c6b;
+    color: #fff;
+  }  /* show the 10-day forecast with the medium view and up */
+  main section article ul li{
+    text-align: left;
   }
 
   article h3{
@@ -73,6 +84,7 @@ section {
   }
 
   article p.town-article{
+    width: 100%;
     display: flex;
     flex-direction: row;
   }

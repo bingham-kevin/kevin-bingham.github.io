@@ -37,22 +37,127 @@
     </ul>
   </nav>
 
-  <footer>
-    <aside>
-      <ul>
-        <li>Tri-City Forecaster</li>
-        <li>123 Main St.</li>
-        <li>Franklin, MU 83454</li>
-        <li>(999)999-9999</li>
-      </ul>
-    </aside>
-    <p class="footer-bar">&copy; 2018 All Rights Reserved | Tri-City Forecaster | <span id="current_date"></span></p>
-  </footer>
+    <main>
+      <h2 id="cityheading"></h2>
+      <div class="center">
+      <figure class="image">
+        <img src="images/franklinsmall.jpg" alt="mountains" sizes="50vw"
+          srcset="images/franklinsmall.jpg 600w,
+                  images/franklinmedium.jpg 1000w,
+                  images/franklinlarge.jpg 1200w">
+      </figure>
+      <p class="location"><h3 id="cityname"></h3></p>
+      <section>
+        <div class="allconditions">
+        <div class="current">
+          <p id="conditions"></p>
+          <p id="currentPic"></p>
+        </div>
+        <div class="highlow">
+          <p id="high"></p>
+          <p id="low"></p>
+        </div>
+        <div class="conditions">
+          <p id="precipitation"></p>
+          <p id="wind"></p>
+          <p id='windchill'></p>
+        </div>
+        </div>
+      </section>
+    </div>
+      <section class="forecast">
+        <h3>10 Day Forecast</h3>
+        <table class="days">
+  	    <thead>
+            <tr>
+              <th id="day0">Day 1</th>
+              <th id="day1">Day 2</th>
+              <th id="day2">Day 3</th>
+              <th id="day3">Day 4</th>
+              <th id="day4">Day 5</th>
+              <th id="day5">Day 6</th>
+              <th id="day6">Day 7</th>
+              <th id="day7">Day 8</th>
+              <th id="day8">Day 9</th>
+              <th id="day9">Day 10</th>
+            </tr>
+  		</thead>
+          <tbody>
+            <tr>
+              <td>89&deg;F</td>
+              <td>87&deg;F</td>
+              <td>78&deg;F</td>
+              <td>75&deg;F</td>
+              <td>72&deg;F</td>
+              <td>72&deg;F</td>
+              <td>79&deg;F</td>
+              <td>83&deg;F</td>
+              <td>85&deg;F</td>
+              <td>89&deg;F</td>
+            </tr>
+  		</tbody>
+        </table>
+      </section>
 
-  <!--script src="scripts/hamburger.js"></script -->
-  <script src="scripts/currentdate.js"></script>
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/windchill.js"></script>
+      <article>
+        <h3>Franklin Breaks Record</h3>
+        <p class="town-article">
+          <img src="images/franklin.jpeg" alt="franklin town">
+          Franklin is experiencing an extremely mild winter. It's only the middle of February and it is already reaching temperatures in the 70s. Hopefully this weather holds and is not a predictor for an overly hot summer.
+        </p>
+  		</article>
 
-</body>
-</html>
+    </main>
+
+    <footer>
+      <aside>
+        <ul>
+          <li>Tri-City Forecaster</li>
+          <li>123 Main St.</li>
+          <li>Franklin, MU 83454</li>
+          <li>(999)999-9999</li>
+        </ul>
+      </aside>
+      <p class="footer-bar">&copy; 2018 All Rights Reserved | Tri-City Forecaster | <span id="current_date"></span></p>
+    </footer>
+
+    <!--script src="scripts/hamburger.js"></script -->
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script type="text/javascript">
+    var section = document.querySelector('section');
+    var requestURL = 'http://api.wunderground.com/api/e61d8ead2b2d7e5e/conditions/q/MI/Greenville.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var townData = request.response;
+      weatherData(townData);
+    }
+    function weatherData(jsonObj){
+      var weather = jsonObj['current_observation'];
+
+      var locationName = document.getElementById('cityname');
+      var cityname = weather['display_location'].city;
+      locationName.innerHTML = cityname;
+      var current = document.getElementById('conditions');
+      current.innerHTML = weather.weather;
+      var highTemp = document.getElementById('high');
+      highTemp.innerHTML = "High: " + weather.temp_f + "&deg; F";
+      var lowTemp = document.getElementById('low');
+      lowTemp.innerHTML = "Low: " + weather.temp_f + "&deg; F";
+      var precip = document.getElementById('precipitation');
+      precip.innerHTML = "Precipitation: " + weather.precip_today_in + " inches";
+      var windSpeed = document.getElementById('wind');
+      windSpeed.innerHTML = "Wind Speed: " + weather.wind_mph + " mph";
+      var feelsLike = document.getElementById('windchill');
+      feelsLike.innerHTML = "Feels like: " + weather.windchill_f + "&deg; F";
+      var currentPic = new Image();
+      currentPic.src = weather.icon_url;
+      document.getElementById('currentPic').appendChild(currentPic);
+      document.getElementById('cityheading').innerHTML = `The City of ${cityname}`;
+    }
+    </script>
+  </body>
+  </html>
