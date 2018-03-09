@@ -37,9 +37,8 @@
     </ul>
   </nav>
   <main>
-<section>
-  <h1></h1>
-</section>
+<div id="townlist">
+</div>
 </main>
   <footer>
     <aside>
@@ -57,7 +56,7 @@
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script>
-var section = document.querySelector('section');
+var section = document.getElementById('townlist');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);

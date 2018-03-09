@@ -37,6 +37,11 @@ section{
     padding: 3em;
     margin: auto;
   }
+
+  main #townlist {
+    display: flex;
+    flex-direction: row;
+  }
   .current{
     vertical-align: middle;
   }

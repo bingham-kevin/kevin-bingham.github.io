@@ -107,7 +107,8 @@ main figure img {
   width: 100%;
 }
 
-section {
+#townlist {
+  margin: auto;
   font-weight: 300;
   text-align: center;
   display: flex;

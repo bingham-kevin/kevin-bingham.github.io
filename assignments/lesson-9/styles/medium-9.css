@@ -17,10 +17,12 @@
   nav button {
   }  /* hamburger button does not need to be shown */
 
-  main section{
+main #townlist {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-shrink: 2;
     align-items: baseline;
+    padding: .1em;
   }
   h2#cityheading{
     font-weight: 700;
