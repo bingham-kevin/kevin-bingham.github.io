@@ -143,10 +143,6 @@
     locationName.innerHTML = cityname;
     var current = document.getElementById('conditions');
     current.innerHTML = weather.weather;
-    var highTemp = document.getElementById('high');
-    highTemp.innerHTML = "High: " + weather.temp_f + "&deg; F";
-    var lowTemp = document.getElementById('low');
-    lowTemp.innerHTML = "Low: " + weather.temp_f + "&deg; F";
     var precip = document.getElementById('precipitation');
     precip.innerHTML = "Precipitation: " + weather.precip_today_in + " inches";
     var windSpeed = document.getElementById('wind');
@@ -157,6 +153,26 @@
     currentPic.src = weather.icon_url;
     document.getElementById('currentPic').appendChild(currentPic);
     document.getElementById('cityheading').innerHTML = `The City of ${cityname}`;
+  }
+  </script>
+  <script>
+  var section1 = document.querySelector('section');
+  var requestURL1 = 'http://api.wunderground.com/api/e61d8ead2b2d7e5e/forecast/q/MN/Franklin.json';
+  var request1 = new XMLHttpRequest();
+  request1.open('GET', requestURL1);
+  request1.responseType = 'json';
+  request1.send();
+  request1.onload = function() {
+    var highLow = request1.response;
+    currentData(highLow);
+  }
+  function currentData(jsonData){
+    var jsonRoot = jsonData['forecast'];
+    console.log(jsonRoot);
+    var highTemp = document.getElementById('high');
+    highTemp.innerHTML = "High: " + jsonRoot.simpleforecast.forecastday[0].high.fahrenheit + "&deg; F";
+    var lowTemp = document.getElementById('low');
+    lowTemp.innerHTML = "Low: " + jsonRoot.simpleforecast.forecastday[0].low.fahrenheit + "&deg; F";
   }
   </script>
 </body>
