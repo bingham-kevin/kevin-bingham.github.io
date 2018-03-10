@@ -16,6 +16,21 @@
 
   nav button {
   }  /* hamburger button does not need to be shown */
+  #weatherstory{
+    border: 1px solid black;
+    margin: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #weatherstory p{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+  }
+  #weatherstory img{
+    width: 100%;
+  }
 
 main #townlist {
     display: flex;

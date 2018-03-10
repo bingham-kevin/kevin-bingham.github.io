@@ -37,8 +37,16 @@
     </ul>
   </nav>
   <main>
-<div id="townlist">
-</div>
+    <div id="weatherstory">
+      <h3>Powerful Nor'easter Expected</h3>
+      <p>
+        More snow, ice, and wind expected in the North East. Powerful waves are threatening several communities near the coast in New England. Power utlity crews are getting ready to mobilize to keep the heat and power on. Local residents should stock up on food and water.
+        <img src="images/noreaster.jpg" alt="wave">
+      </p>
+    </div>
+    <div id="townlist">
+
+    </div>
 </main>
   <footer>
     <aside>
@@ -68,7 +76,10 @@ request.onload = function() {
 }
 
 function showTowns(jsonObj) {
+
   var towns = jsonObj['towns'];
+  var townImages = ['images/town1.png','images/town2.png','images/town3.png'];
+  var l = 0;
   for (var i = 0; i < towns.length; i++) {
     var townName = towns[i].name;
     if (townName != "Placerton"){
@@ -81,13 +92,15 @@ function showTowns(jsonObj) {
     var townH5 = document.createElement('h5');
     var townP2 = document.createElement('p');
     var eventList = document.createElement('ul');
-
+    var townImage = document.createElement('img');
     townH1.textContent =  towns[i].name;
     townH2.textContent =  towns[i].motto;
     townH3.textContent = 'Established ' + towns[i].yearFounded;
     townH5.textContent = " Population: " + towns[i].currentPopulation;
     townP2.textContent = "Avg. Rainfall: " + towns[i].averageRainfall + " inches";
     townH4.textContent = "Events";
+    townImage.setAttribute("src", townImages[l]);
+    var l = l+1;
 
     var townEvents = towns[i].events;
     for (var j = 0; j < townEvents.length; j++) {
@@ -103,6 +116,7 @@ function showTowns(jsonObj) {
     townSection.appendChild(townP2);
     townSection.appendChild(townH4);
     townSection.appendChild(eventList);
+    townSection.appendChild(townImage);
 
     section.appendChild(townSection);
   }
