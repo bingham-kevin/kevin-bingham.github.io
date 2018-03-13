@@ -1,38 +1,36 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-
   nav ul.hide {
     display: flex;
     flex-direction: row;
   }
   nav button {
-   display: none;
+    display: none;
   }
   main figure img {
     width: 100%;
   }
-  main figure.image img{
+  main figure.image img {
     width: 100%;
   }
-main .center {
-  display: flex;
-  flex-direction: column;
-}
-main .image{
-  width: 100%;
-  grid-column: 1;
-  grid-row: 1;
-}
-main .allconditions {
-  display: flex;
-  flex-direction: row;
-}
-.location {
-  display: flex;
-  flex-direction: column;
-}
-
-section{
+  main .center {
+    display: flex;
+    flex-direction: column;
+  }
+  main .image {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  main .allconditions {
+    display: flex;
+    flex-direction: row;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
     grid-column: 1;
     grid-row: 2;
     vertical-align: middle;
@@ -41,59 +39,58 @@ section{
     padding: 3em;
     margin: auto;
   }
-
   main #townlist {
     display: flex;
     flex-direction: row;
   }
-  .current{
+  .current {
     vertical-align: middle;
   }
-  .highlow p{
+  .highlow p {
     margin: 1em 1em;
   }
-  .conditions{
+  .conditions {
     display: flex;
     flex-direction: column;
   }
-  .conditions p{
+  .conditions p {
     margin: 1em 1em;
   }
-  main img{
+  main img {
     width: 100%;
     height: auto;
   }
-  .images{
+  .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
   }
-  .picture1{
+  .picture1 {
     grid-column: 1;
     grid-row: 1;
   }
-  .picture2{
+  .picture2 {
     grid-column: 2;
     grid-row: 1;
   }
-  .picture3{
+  .picture3 {
     grid-column: 3;
     grid-row: 1;
   }
-  .picture4{
+  .picture4 {
     grid-column: 1;
     grid-row: 2;
   }
-  .picture5{
+  .picture5 {
     grid-column: 2;
     grid-row: 2;
   }
-  .picture6{
+  .picture6 {
     grid-column: 3;
     grid-row: 2;
   }
-  .images p:hover{
+  .images p:hover {
     box-shadow: .5em .75em #939393;
   }
 }

@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="en-us">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,16 @@
   <meta name="description" content="page description placeholder">
   <!-- external style references in the proper cascading order -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="styles/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-9.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium-9.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large-9.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
 </head>
+
 <body>
 
   <header class="header">
@@ -28,12 +33,12 @@
   <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primarynav" class="hide">
-    	<li><a href="index.html">Home</a></li>
-    	<li><a href="franklin.html">Franklin</a></li>
-    	<li><a href="greenville.html">Greenville</a></li>
-    	<li><a href="springfield.html">Springfield</a></li>
-    	<li class="active"><a href="#">Storm Center</a></li>
-    	<li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li class="active"><a href="#">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
 
@@ -42,20 +47,20 @@
       <fieldset>
         <legend><span>Personal Information</span></legend>
         <label><span>Full Name:</span></label>
-          <input type="text" name="fullname" size="30" required>
+        <input type="text" name="fullname" size="30" required>
         <label><span>Email:</span></label>
-          <input type="email" placeholder="name@tricityforcaster.com" size="30" required>
+        <input type="email" placeholder="name@tricityforcaster.com" size="30" required>
         <label><span>Phone Number:</span></label>
-          <input type="tel" value="" placeholder="555-555-5555" required>
+        <input type="tel" value="" placeholder="555-555-5555" required>
         <label><span>Zip Code:</span></label>
-          <input type="number" required>
+        <input type="number" required>
       </fieldset>
       <fieldset>
         <legend><span>Storm Details</span></legend>
         <label><span>Storm Date:</span></label>
-          <input type="date" size="30">
+        <input type="date" size="30">
         <label><span>Storm Type:</span></label>
-          <input type="text" name="stormtype" list="storms" size="30">
+        <input type="text" name="stormtype" list="storms" size="30">
         <datalist id="storms">
           <option value="Flash Flood"></option>
           <option value="Hail"></option>
@@ -64,24 +69,24 @@
           <option value="Tornado"></option>
         </datalist>
         <label><span>Storm Severity (1-10):</span></label>
-		      <input type="range" id="storm" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		      <span id="stormseverity">5</span>
+        <input type="range" id="storm" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="stormseverity">5</span>
         <label><span>Storm Region:</span></label>
-          <select>
+        <select>
             <option value="" disabled selected>Select Region...</option>
             <option value="franklin">Franklin</option>
             <option value="greenville">Greenville</option>
             <option value="springfield">Springfield</option>
           </select>
-        <label><span>User In-Danger Level:</span></label>
-            Yes<input id="radio" type="radio" name="danger" value="yes">
-            Maybe<input id="radio" type="radio" name="danger" value="maybe">
-            No<input id="radio" type="radio" name="danger" value="no">
+        <label><span>User In-Danger Level:</span></label> Yes
+        <input id="radio" type="radio" name="danger" value="yes"> Maybe
+        <input id="radio" type="radio" name="danger" value="maybe"> No
+        <input id="radio" type="radio" name="danger" value="no">
       </fieldset>
       <fieldset>
         <legend><span>Information</span></legend>
         <label><span>Additional Information or Comments:</span></label>
-            <textarea name="message" rows="10" cols="35"></textarea>
+        <textarea name="message" rows="10" cols="35"></textarea>
       </fieldset>
       <input type="submit" onclick="window.location='thanks.html';" value="Submit Report" class="submitBtn">
       <!--input type="hidden" name="redirect" value="thanks.html" -->
@@ -106,4 +111,5 @@
   <script src="scripts/rating.js"></script>
 
 </body>
+
 </html>

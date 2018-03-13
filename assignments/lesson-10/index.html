@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="en-us">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,16 @@
   <meta name="description" content="page description placeholder">
   <!-- external style references in the proper cascading order -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="styles/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-9.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium-9.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large-9.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
 </head>
+
 <body>
 
   <header class="header">
@@ -28,26 +33,27 @@
   <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primarynav" class="hide">
-    	<li class="active"><a href="#">Home</a></li>
-    	<li><a href="franklin.html">Franklin</a></li>
-    	<li><a href="greenville.html">Greenville</a></li>
-    	<li><a href="springfield.html">Springfield</a></li>
-    	<li><a href="stormcenter.html">Storm Center</a></li>
-    	<li><a href="gallery.html">Gallery</a></li>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
   <main>
     <div id="weatherstory">
       <h3>Powerful Nor'easter Expected</h3>
       <p>
-        More snow, ice, and wind expected in the North East. Powerful waves are threatening several communities near the coast in New England. Power utlity crews are getting ready to mobilize to keep the heat and power on. Local residents should stock up on food and water.
+        More snow, ice, and wind expected in the North East. Powerful waves are threatening several communities near the coast in New England. Power utlity crews are getting ready to mobilize to keep the heat and power on. Local residents should stock up on food
+        and water.
         <img src="images/noreaster.jpg" alt="wave">
       </p>
     </div>
     <div id="townlist">
 
     </div>
-</main>
+  </main>
   <footer>
     <aside>
       <ul>
@@ -64,66 +70,67 @@
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script>
-var section = document.getElementById('townlist');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function() {
-  var townData = request.response;
-  showTowns(townData);
-}
-
-function showTowns(jsonObj) {
-
-  var towns = jsonObj['towns'];
-  var townImages = ['images/town1.png','images/town2.png','images/town3.png'];
-  var l = 0;
-  for (var i = 0; i < towns.length; i++) {
-    var townName = towns[i].name;
-    if (townName != "Placerton"){
-    var townSection = document.createElement('article');
-    var townH1 = document.createElement('h1');
-    var townH2 = document.createElement('h2');
-    var townH3 = document.createElement('h3');
-    var townH4 = document.createElement('h4');
-    var townH4 = document.createElement('h4');
-    var townH5 = document.createElement('h5');
-    var townP2 = document.createElement('p');
-    var eventList = document.createElement('ul');
-    var townImage = document.createElement('img');
-    townH1.textContent =  towns[i].name;
-    townH2.textContent =  towns[i].motto;
-    townH3.textContent = 'Established ' + towns[i].yearFounded;
-    townH5.textContent = " Population: " + towns[i].currentPopulation;
-    townP2.textContent = "Avg. Rainfall: " + towns[i].averageRainfall + " inches";
-    townH4.textContent = "Events";
-    townImage.setAttribute("src", townImages[l]);
-    townImage.setAttribute("alt", "town");
-    var l = l+1;
-
-    var townEvents = towns[i].events;
-    for (var j = 0; j < townEvents.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = townEvents[j];
-      eventList.appendChild(listItem);
+    var section = document.getElementById('townlist');
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var townData = request.response;
+      showTowns(townData);
     }
 
-    townSection.appendChild(townH1);
-    townSection.appendChild(townH2);
-    townSection.appendChild(townH3);
-    townSection.appendChild(townH5);
-    townSection.appendChild(townP2);
-    townSection.appendChild(townH4);
-    townSection.appendChild(eventList);
-    townSection.appendChild(townImage);
+    function showTowns(jsonObj) {
 
-    section.appendChild(townSection);
-  }
-}
-}
+      var towns = jsonObj['towns'];
+      var townImages = ['images/town1.png', 'images/town2.png', 'images/town3.png'];
+      var l = 0;
+      for (var i = 0; i < towns.length; i++) {
+        var townName = towns[i].name;
+        if (townName != "Placerton") {
+          var townSection = document.createElement('article');
+          var townH1 = document.createElement('h1');
+          var townH2 = document.createElement('h2');
+          var townH3 = document.createElement('h3');
+          var townH4 = document.createElement('h4');
+          var townH4 = document.createElement('h4');
+          var townH5 = document.createElement('h5');
+          var townP2 = document.createElement('p');
+          var eventList = document.createElement('ul');
+          var townImage = document.createElement('img');
+          townH1.textContent = towns[i].name;
+          townH2.textContent = towns[i].motto;
+          townH3.textContent = 'Established ' + towns[i].yearFounded;
+          townH5.textContent = " Population: " + towns[i].currentPopulation;
+          townP2.textContent = "Avg. Rainfall: " + towns[i].averageRainfall + " inches";
+          townH4.textContent = "Events";
+          townImage.setAttribute("src", townImages[l]);
+          townImage.setAttribute("alt", "town");
+          var l = l + 1;
+
+          var townEvents = towns[i].events;
+          for (var j = 0; j < townEvents.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = townEvents[j];
+            eventList.appendChild(listItem);
+          }
+
+          townSection.appendChild(townH1);
+          townSection.appendChild(townH2);
+          townSection.appendChild(townH3);
+          townSection.appendChild(townH5);
+          townSection.appendChild(townP2);
+          townSection.appendChild(townH4);
+          townSection.appendChild(eventList);
+          townSection.appendChild(townImage);
+
+          section.appendChild(townSection);
+        }
+      }
+    }
   </script>
 
 </body>
+
 </html>

@@ -1,7 +1,10 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;
-  }  /* This wildcard applies to all elements ensuring a box layout model */
+* {
+  box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
@@ -25,12 +28,12 @@ header {
   background-color: #fff;
   font-weight: 700;
 }
+
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 
 .header h1 {
   display: flex;
@@ -43,6 +46,7 @@ header {
   height: 25%;
   width: 25%;
 }
+
 .headertext {
   flex-direction: column;
   text-align: left;
@@ -59,18 +63,20 @@ nav {
 }
 
 nav button {
- position: absolute;
- top: 10px;
- right: 10px;
- z-index: 20;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
 }
+
 nav ul.hide {
   display: none;
 }
+
 nav ul li {
   margin: 0px 10px 0px 10px;
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul li a {
@@ -94,32 +100,37 @@ main {
   margin: 0 auto;
   background-color: white;
 }
+
 main h2 {
- text-align: center;
+  text-align: center;
 }
 
 main figure {
   margin: 0 0 .2rem 2%;
-  width:96%;
+  width: 96%;
 }
 
 main figure img {
   width: 100%;
 }
+
 .location {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#weatherstory{
+
+#weatherstory {
   margin: 2% 2% 2% 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#weatherstory img{
+
+#weatherstory img {
   width: 100%;
 }
+
 #townlist {
   margin: auto;
   font-weight: 300;
@@ -128,50 +139,61 @@ main figure img {
   flex-direction: column;
   align-items: baseline;
 }
-.allconditions{
+
+.allconditions {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 700;
 }
-.current{
+
+.current {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: .5em;
 }
-  .highlow {
-    display: flex;
-    align-items: center;
-    flex: auto;
-    flex-direction: column;
-  }
-  .highlow p{
-    padding: .5em;
-  }
-  .conditions{
-    display: flex;
-    flex-direction: column;
-  }
 
-  section.forecast{
-    display: none;
-  }
-article{
+.highlow {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  flex-direction: column;
+}
+
+.highlow p {
+  padding: .5em;
+}
+
+.conditions {
+  display: flex;
+  flex-direction: column;
+}
+
+section.forecast {
+  display: none;
+}
+
+article {
   width: 80%;
   padding: 1em 1em;
   border-width: 1px;
   border-style: solid;
   margin: 5% 5% 5% 5%;
 }
-article h3{
+
+article h3 {
   text-align: center;
 }
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+
+article p.town-article img {
+  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%;
-  height: 62%;/* fill the page in the small/phone view */
+  height: 62%;
+  /* fill the page in the small/phone view */
 }
-article ul li{
+
+article ul li {
   list-style-type: none;
 }
 
@@ -179,25 +201,30 @@ footer {
   font-size: .7em;
   text-align: center;
 }
-footer aside ul li{
+
+footer aside ul li {
   list-style-type: none;
   text-align: center;
 }
-footer p {
-  } /* This structure refers to p elements that are direct children of the footer element */
+
+footer p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
 
 /* Gallery */
 
-  .images{
-    display: grid;
-  }
-  .images p{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.images {
+  display: grid;
+}
+
+.images p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* Storm Center */
+
 form#stormy {
   margin: 2em 5%;
 }
@@ -209,12 +236,12 @@ fieldset {
 }
 
 legend {
- margin-left: 5%;
- padding: .8em;
- background-color: #395c6b;
- color: #fff;
- border: #A6A1A1 solid 1px;
- box-shadow: 1px 1px 2px #A6A1A1;
+  margin-left: 5%;
+  padding: .8em;
+  background-color: #395c6b;
+  color: #fff;
+  border: #A6A1A1 solid 1px;
+  box-shadow: 1px 1px 2px #A6A1A1;
 }
 
 label {
@@ -222,18 +249,21 @@ label {
   padding-top: .8em;
   padding-bottom: .4em;
 }
-select {
 
-}
-input, textarea{
+select {}
+
+input, textarea {
   width: 60%;
   max-width: 500px;
 }
-input#radio{
+
+input#radio {
   width: 10%;
 }
+
 input.submitBtn {
-  -webkit-appearance: none; /* remove the apple mobile default styling */
+  -webkit-appearance: none;
+  /* remove the apple mobile default styling */
   border-radius: 5px;
   background-color: #395c6b;
   color: #fff;
@@ -242,6 +272,7 @@ input.submitBtn {
 }
 
 /* Other Class Selectors */
+
 main h1#thanks {
   font-weight: 600;
   text-align: center;

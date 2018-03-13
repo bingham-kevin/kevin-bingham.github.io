@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="en-us">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,16 @@
   <meta name="description" content="page description placeholder">
   <!-- external style references in the proper cascading order -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="styles/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-9.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium-9.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large-9.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
 </head>
+
 <body>
 
   <header class="header">
@@ -28,103 +33,103 @@
   <nav class="clearfix">
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primarynav" class="hide">
-    	<li><a href="index.html">Home</a></li>
-    	<li><a href="franklin.html">Franklin</a></li>
-    	<li class="active"><a href="#">Greenville</a></li>
-    	<li><a href="springfield.html">Springfield</a></li>
-    	<li><a href="stormcenter.html">Storm Center</a></li>
-    	<li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li class="active"><a href="#">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
 
-    <main>
-      <h2 id="cityheading"></h2>
-      <div class="center">
+  <main>
+    <h2 id="cityheading"></h2>
+    <div class="center">
       <figure class="image">
-        <img src="images/greenvillesmall.jpg" alt="mountains" sizes="50vw"
-          srcset="images/greenvillesmall.jpg 600w,
+        <img src="images/greenvillesmall.jpg" alt="mountains" sizes="50vw" srcset="images/greenvillesmall.jpg 600w,
                   images/greenvillemedium.jpg 1000w,
                   images/greenvillelarge.jpg 1200w">
       </figure>
-      <div class="location"><h3 id="cityname"></h3></div>
+      <div class="location">
+        <h3 id="cityname"></h3></div>
       <section>
         <div class="allconditions">
-        <div class="current">
-          <p id="conditions"></p>
-          <p id="currentPic"></p>
-        </div>
-        <div class="highlow">
-          <p id="high"></p>
-          <p id="low"></p>
-        </div>
-        <div class="conditions">
-          <p id="precipitation"></p>
-          <p id="wind"></p>
-          <p id='windchill'></p>
-        </div>
+          <div class="current">
+            <p id="conditions"></p>
+            <p id="currentPic"></p>
+          </div>
+          <div class="highlow">
+            <p id="high"></p>
+            <p id="low"></p>
+          </div>
+          <div class="conditions">
+            <p id="precipitation"></p>
+            <p id="wind"></p>
+            <p id='windchill'></p>
+          </div>
         </div>
       </section>
     </div>
-      <section class="forecast">
-        <h3>10 Day Forecast</h3>
-        <table class="days">
-  	    <thead>
-            <tr>
-              <th id="day0">Day 1</th>
-              <th id="day1">Day 2</th>
-              <th id="day2">Day 3</th>
-              <th id="day3">Day 4</th>
-              <th id="day4">Day 5</th>
-              <th id="day5">Day 6</th>
-              <th id="day6">Day 7</th>
-              <th id="day7">Day 8</th>
-              <th id="day8">Day 9</th>
-              <th id="day9">Day 10</th>
-            </tr>
-  		</thead>
-          <tbody>
-            <tr>
-              <td>89&deg;F</td>
-              <td>87&deg;F</td>
-              <td>78&deg;F</td>
-              <td>75&deg;F</td>
-              <td>72&deg;F</td>
-              <td>72&deg;F</td>
-              <td>79&deg;F</td>
-              <td>83&deg;F</td>
-              <td>85&deg;F</td>
-              <td>89&deg;F</td>
-            </tr>
-  		</tbody>
-        </table>
-      </section>
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table class="days">
+        <thead>
+          <tr>
+            <th id="day0">Day 1</th>
+            <th id="day1">Day 2</th>
+            <th id="day2">Day 3</th>
+            <th id="day3">Day 4</th>
+            <th id="day4">Day 5</th>
+            <th id="day5">Day 6</th>
+            <th id="day6">Day 7</th>
+            <th id="day7">Day 8</th>
+            <th id="day8">Day 9</th>
+            <th id="day9">Day 10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>84&deg;F</td>
+            <td>84&deg;F</td>
+            <td>80&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>70&deg;F</td>
+            <td>75&deg;F</td>
+            <td>75&deg;F</td>
+            <td>77&deg;F</td>
+            <td>85&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-      <article>
-        <h3>Greenville Breaks Record</h3>
-        <p class="town-article">
-          <img src="images/greenvillesmall.jpg" alt="greenville town">
-          Greenville is experiencing an extremely mild winter. It's only the middle of February and it is already reaching temperatures in the 70s. Hopefully this weather holds and is not a predictor for an overly hot summer.
-        </p>
-  		</article>
+    <article>
+      <h3>Greenville Breaks Record</h3>
+      <p class="town-article">
+        <img src="images/greenvillesmall.jpg" alt="greenville town"> Greenville is experiencing an extremely mild winter. It's only the middle of February and it is already reaching temperatures in the 70s. Hopefully this weather holds and is not a predictor
+        for an overly hot summer.
+      </p>
+    </article>
 
-    </main>
+  </main>
 
-    <footer>
-      <aside>
-        <ul>
-          <li>Tri-City Forecaster</li>
-          <li>123 Main St.</li>
-          <li>Franklin, MU 83454</li>
-          <li>(999)999-9999</li>
-        </ul>
-      </aside>
-      <p class="footer-bar">&copy; 2018 All Rights Reserved | Tri-City Forecaster | <span id="current_date"></span></p>
-    </footer>
+  <footer>
+    <aside>
+      <ul>
+        <li>Tri-City Forecaster</li>
+        <li>123 Main St.</li>
+        <li>Franklin, MU 83454</li>
+        <li>(999)999-9999</li>
+      </ul>
+    </aside>
+    <p class="footer-bar">&copy; 2018 All Rights Reserved | Tri-City Forecaster | <span id="current_date"></span></p>
+  </footer>
 
-    <!--script src="scripts/hamburger.js"></script -->
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script>
+  <!--script src="scripts/hamburger.js"></script -->
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/hamburger.js"></script>
+  <script>
     var section = document.querySelector('section');
     var requestURL = 'https://api.wunderground.com/api/e61d8ead2b2d7e5e/conditions/q/MI/Greenville.json';
     var request = new XMLHttpRequest();
@@ -135,7 +140,8 @@
       var townData = request.response;
       weatherData(townData);
     }
-    function weatherData(jsonObj){
+
+    function weatherData(jsonObj) {
       var weather = jsonObj['current_observation'];
 
       var locationName = document.getElementById('cityname');
@@ -154,8 +160,8 @@
       document.getElementById('currentPic').appendChild(currentPic);
       document.getElementById('cityheading').innerHTML = `The City of ${cityname}`;
     }
-    </script>
-    <script>
+  </script>
+  <script>
     var section1 = document.querySelector('section');
     var requestURL1 = 'https://api.wunderground.com/api/e61d8ead2b2d7e5e/forecast/q/MI/Greenville.json';
     var request1 = new XMLHttpRequest();
@@ -166,7 +172,8 @@
       var highLow = request1.response;
       currentData(highLow);
     }
-    function currentData(jsonData){
+
+    function currentData(jsonData) {
       var jsonRoot = jsonData['forecast'];
       console.log(jsonRoot);
       var highTemp = document.getElementById('high');
@@ -174,6 +181,7 @@
       var lowTemp = document.getElementById('low');
       lowTemp.innerHTML = "Low: " + jsonRoot.simpleforecast.forecastday[0].low.fahrenheit + "&deg; F";
     }
-    </script>
-  </body>
-  </html>
+  </script>
+</body>
+
+</html>
