@@ -46,4 +46,6 @@
     highTemp.innerHTML = "High: " + jsonRoot.simpleforecast.forecastday[0].high.fahrenheit + "&deg; F";
     var lowTemp = document.getElementById('low');
     lowTemp.innerHTML = "Low: " + jsonRoot.simpleforecast.forecastday[0].low.fahrenheit + "&deg; F";
+    var fcttext = document.getElementById('forecasttext');
+    fcttext.innerHTML = jsonRoot.txt_forecast.forecastday[0].fcttext;
   }
