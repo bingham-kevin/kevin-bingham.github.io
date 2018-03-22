@@ -1,4 +1,3 @@
-< script >
   $(function() {
     // Array containing Objects with Fruit names & quantities
     var fruitBasket = [{
