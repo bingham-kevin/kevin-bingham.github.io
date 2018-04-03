@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Home</title>
+  <meta name="author" content="Kevin Bingham">
+  <meta name="description" content="">
+  <!-- external style references in the proper cascading order -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
+</head>
+
+<body>
+  <header class="header">
+    <img src="./images/bikelogo.svg" alt="bikelogo">
+    <div class="headertext">
+      <h1>The Mountain Spoke</h1>
+      <div class="subheading">
+        <h3>Serving Bicycle Enthusiasts in the Greater Bozeman Area</h3>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="indexsection">
+      <div class="box" id="eventsbox">
+        <h2>Next Event</h2>
+        <img src="./images/events.jpg" alt="events">
+        <p>
+          Mauris tincidunt, mauris at pellentesque venenatis, neque lorem iaculis neque, sit amet elementum tellus quam ac risus. Duis tincidunt auctor viverra.
+        </p>
+      </div>
+      <div class="box" id="tourbox">
+        <h2>Upcoming Tours</h2>
+        <img src="./images/tour.jpg" alt="tours">
+        <p>
+          Mauris tincidunt, mauris at pellentesque venenatis, neque lorem iaculis neque, sit amet elementum tellus quam ac risus. Duis tincidunt auctor viverra.
+        </p>
+      </div>
+      <div class="box" id="salesbox">
+        <h2>New Bikes</h2>
+        <img src="./images/sales.jpg" alt="sales">
+        <p>
+          Mauris tincidunt, mauris at pellentesque venenatis, neque lorem iaculis neque, sit amet elementum tellus quam ac risus. Duis tincidunt auctor viverra.
+        </p>
+      </div>
+    </section>
+    <a href="service.html">
+      <article>
+        <img src="./images/repair.jpg" alt="repair">
+        <h3>Bring your bike in for a tune up!</h3>
+      </article>
+    </a>
+  </main>
+  <footer>
+    <nav>
+      <ul id="footernav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <aside>
+      &copy; The Mountain Spoke | Bozeman, MT | <span id="current_date"></span>
+    </aside>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/hamburger.js"></script>
+  <script src="./scripts/activepage.js"></script>
+</body>
+
+</html>

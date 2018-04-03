@@ -1,0 +1,19 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  nav button {
+    display: none;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+  .box {
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+}
