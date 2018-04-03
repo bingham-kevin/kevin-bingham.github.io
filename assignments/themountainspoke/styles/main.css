@@ -102,25 +102,39 @@ p {
   color: #000000;
 }
 
-main a article {
+main a {
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+
+main article a:hover {
+  text-decoration: none;
+  background-color: #A98475;
+}
+
+main article a {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
-  padding-left: 2em 1em;
+  padding: 2em 1em;
   margin: auto;
   width: 75%;
   border: 1px solid #1E525E;
   align-items: center;
+  background-color: #1597b2;
+  box-shadow: 8px 10px #A98475;
 }
 
-main a article img {
+main article a img {
   width: 60%;
   padding: .5em .5em;
 }
 
-main a article h3 {
+main article a h3 {
   font-size: 3em;
   text-align: center;
   text-decoration: none;
+  color: #fff;
 }
 
 footer {
