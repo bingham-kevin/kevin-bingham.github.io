@@ -24,12 +24,36 @@
     font-size: 1.5em;
   }
   section {
+    margin: 5%;
     justify-content: center;
     display: flex;
     flex-direction: row;
   }
+  story {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+  }
+  story .storytext {
+    width: 60%;
+  }
+  story .storyimage {
+    padding: 1em 1em;
+    width: 40%;
+    height: auto;
+  }
   .box {
     width: 30%;
+  }
+  #tourspage {
+    display: flex;
+    flex-direction: column;
+  }
+  .bold {
+    font-size: 1.5em;
+    font-weight: 900;
+    font-variant: small-caps;
   }
   #contactform {
     align-items: center;

@@ -12,7 +12,7 @@ header, nav, main, footer {
 header {
   display: flex;
   flex-direction: row;
-  padding-left: 1em;
+  padding: 1em 1em;
   color: #fff;
   margin: auto;
   background-color: #1E525E;
@@ -77,8 +77,20 @@ main {
 }
 
 section {
+  color: #000;
   display: flex;
   flex-direction: column;
+}
+
+story {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+}
+
+story img {
+  width: 100%;
 }
 
 .box {
