@@ -82,15 +82,22 @@ section {
   flex-direction: column;
 }
 
-story {
+.story {
   display: flex;
   flex-direction: column;
   width: 90%;
   justify-content: center;
+  margin: 5%;
 }
 
-story img {
+.story img {
   width: 100%;
+}
+
+section a {
+  width: 95%;
+  text-decoration: none;
+  color: #000;
 }
 
 .box {
@@ -98,6 +105,12 @@ story img {
   padding: 1em 1em;
   display: flex;
   flex-direction: column;
+  border: 1px solid #000;
+  margin: 2%;
+}
+
+.box:hover {
+  box-shadow: 2px 2px #555555;
 }
 
 .box h2 {
@@ -108,6 +121,18 @@ story img {
 .box img {
   align-content: center;
   width: 100%;
+}
+
+.cost {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-variant: small-caps;
+}
+
+.bold {
+  font-size: 1.5em;
+  font-weight: 900;
+  font-variant: small-caps;
 }
 
 p {

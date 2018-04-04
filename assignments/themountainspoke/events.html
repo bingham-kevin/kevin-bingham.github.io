@@ -8,7 +8,7 @@
   <meta name="author" content="Kevin Bingham">
   <meta name="description" content="">
   <!-- external style references in the proper cascading order -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
   <link href="styles/normalize.css" rel="stylesheet">
   <!-- normalize useragent/browser defaults -->
   <link href="styles/main.css" rel="stylesheet">
@@ -42,7 +42,7 @@
   </nav>
   <main>
     <section>
-      <story>
+      <div class="story">
         <div class="storytext">
           <h2>Cycle the Continental Divide</h2>
           <h4>June 19 - July 02, 2018</h4>
@@ -60,9 +60,29 @@
             </ul>
           </p>
         </div>
-        <div class="storyimage">
-          <img src="./images/maintenance.jpg" alt="maintenance">
+        <div id="contactform">
+          <form method="post" enctype="multipart/form-data" name="contact" id="info">
+            <fieldset>
+              <legend><span>Contact Information</span></legend>
+              <label><span>First Name:</span></label>
+              <input type="text" name="firstname" size="30" autocomplete="given-name" required>
+              <label><span>Last Name:</span></label>
+              <input type="text" name="lastname" size="30" autocomplete="family-name" required>
+              <label><span>Email:</span></label>
+              <input type="email" placeholder="name@themountainspoke.com" autocomplete="email" size="30" required>
+              <label><span>Phone Number:</span></label>
+              <input type="tel" value="" placeholder="555-555-5555" autocomplete="mobile" required>
+              <label><span>Date of Birth:</span></label>
+              <input type="date" name="dob" required>
+              <label><span>Home State or Country (if outside the United States):</span></label>
+              <input type="text" name="homelocation" size="30" required>
+              <label><span>Needs or Comments:</span></label>
+              <textarea name="message" rows="10" cols="30"></textarea>
+            </fieldset>
+            <input type="submit" onclick="window.location='thanks.html';" value="Submit" class="submitBtn">
+          </form>
         </div>
+      </div>
       </story>
     </section>
     <article>
