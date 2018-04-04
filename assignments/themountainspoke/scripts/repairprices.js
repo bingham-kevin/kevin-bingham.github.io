@@ -14,7 +14,6 @@ function repairPrice(jsonObj) {
 
   var repair = jsonObj;
 
-  var service1 = document.getElementById('service1');
-  service1.innerHTML = repair.services[0];
-  document.getElementById('cityheading').innerHTML = `The City of ${cityname}`;
+  var service1 = document.getElementById('serviceprice1');
+  service1.innerHTML = repair.services.tuneUp;
 }

@@ -1,13 +1,27 @@
 {
 	"services":{
-		"tuneUp":"$79.99",
-		"brakeRepair":"$39.99",
-		"tireBalancing":"$16.99",
-		"chainReplacement":"$23.99"
+		"tuneUp":{
+			"name":"Tune Up",
+			"price":"$79.99"},
+		"brakeRepair":{
+			"name":"Brake Repair",
+			"price":"$39.99"},
+		"tireBalancing":{
+			"name":"Tire Balancing",
+			"price":"$16.99"},
+		"chainReplacement":{
+			"name":"Chain Replacement",
+			"price":"$23.99"}
   },
   "parts":{
-    "spareTubes":"$13.99",
-    "multiTool":"$26.99",
-    "standardChain":"$41.99"
+		"spareTubes":{
+			"name":"Spare Tubes",
+			"price":"$13.99"},
+		"multiTool":{
+			"name":"Multi-tool",
+			"price":"$26.99"},
+		"standardChain":{
+			"name":"Standard Chain",
+			"price":"$41.99"}
   }
 }
