@@ -12,7 +12,7 @@ header, nav, main, footer {
 header {
   display: flex;
   flex-direction: row;
-  padding: 1em 1em;
+  padding: 1.5em 1em;
   color: #fff;
   margin: auto;
   background-color: #1E525E;

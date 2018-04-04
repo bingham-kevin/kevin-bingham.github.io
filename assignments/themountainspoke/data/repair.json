@@ -1,0 +1,13 @@
+{
+	"Services":{
+		"Tune up":"$79.99",
+		"Brake repair":"$39.99",
+		"Tire Balancing":"$16.99",
+		"Chain Replacement":"$23.99"
+  },
+  "Parts":{
+    "Spare Tubes":"$13.99",
+    "Multi-tool":"$26.99",
+    "Standard Chain":"$41.99"
+  }
+}
