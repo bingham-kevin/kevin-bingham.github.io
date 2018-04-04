@@ -239,6 +239,31 @@ input.submitBtn {
   box-shadow: 3px 3px 4px #dfe6f2;
 }
 
+table {
+  border-collapse: collapse;
+  text-align: left;
+  font-weight: 300;
+}
+
+#table {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+table#repairtable {
+  margin: 10% 0%;
+}
+
+table#partstable {
+  margin: 10% 0%;
+}
+
+td.firstcell {
+  min-width: 200px;
+  max-width: auto;
+}
+
 #contactinfo {
   margin: 5% 5%;
   padding: 1em 1em;
