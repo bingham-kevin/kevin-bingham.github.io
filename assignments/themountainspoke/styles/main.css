@@ -3,7 +3,7 @@
 }
 
 header, nav, main, footer {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #dfe6f1;
   color: #1E525E;
   justify-content: center;
@@ -13,7 +13,7 @@ header {
   display: flex;
   flex-direction: row;
   padding: 1.5em 1em;
-  color: #fff;
+  color: #ffffff;
   margin: auto;
   background-color: #1E525E;
 }
