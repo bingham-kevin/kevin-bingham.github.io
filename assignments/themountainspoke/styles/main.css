@@ -239,10 +239,9 @@ input.submitBtn {
   box-shadow: 3px 3px 4px #dfe6f2;
 }
 
-iframe {
+#contactinfo {
   margin: 5% 5%;
   padding: 1em 1em;
-  width: 90%;
 }
 
 #thanks {
